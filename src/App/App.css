@@ -1,0 +1,9 @@
+.App{
+    background-color: azure;
+    color: rgb(11, 32, 65);
+}
+
+.App--dark-mode{
+    background-color: rgb(11, 32, 65);
+    color: azure;
+}
