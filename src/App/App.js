@@ -16,7 +16,7 @@ function App() {
     const isDarkModeEnabled = useRecoilValue(darkModeState);
 
     return (
-        <div className={ `App ${ isDarkModeEnabled ? 'App--dark-mode' : '' }`}>
+        <div className={ `App ${ isDarkModeEnabled ? 'App--dark-mode' : '' }`} style={{ height: "100vh"}}>
             <Header />
 
             <Route exact path ='/' component={Home}/>
