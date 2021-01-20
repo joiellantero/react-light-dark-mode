@@ -1,6 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 
+import { Link } from 'react-router-dom'
+
 import { useRecoilState } from 'recoil';
 import { darkModeState } from '../Shared/globalState';
 
@@ -135,22 +137,22 @@ const Header = () => {
                     </div>
                     <Divider />
                     <List>
-                        <ListItem button component='' to="/">
+                        <ListItem button component={Link} to="/">
                             <ListItemIcon><HomeIcon /></ListItemIcon>
                             <ListItemText>Home</ListItemText>
                         </ListItem>
 
-                        <ListItem button component='' to="/blog">
+                        <ListItem button component={Link} to="/blog">
                             <ListItemIcon><GradeIcon /></ListItemIcon>
                             <ListItemText>Blog</ListItemText>
                         </ListItem>
 
-                        <ListItem button component='' to="/about">
+                        <ListItem button component={Link} to="/about">
                             <ListItemIcon><GradeIcon /></ListItemIcon>
                             <ListItemText>About</ListItemText>
                         </ListItem>
 
-                        <ListItem button component='' to="/help">
+                        <ListItem button component={Link} to="/help">
                             <ListItemIcon><HelpIcon /></ListItemIcon>
                             <ListItemText>Help</ListItemText>
                         </ListItem>

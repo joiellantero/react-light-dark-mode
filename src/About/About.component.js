@@ -9,14 +9,14 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const Home = () => {
+const About = () => {
     const classes = useStyles();
 
     return(
         <div className={classes.root}>
-            <h1 className="text-center my-5">Home page</h1>
+            <h1 className="text-center my-5">About page</h1>
         </div>
     );
 };
 
-export default Home;
+export default About;
