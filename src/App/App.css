@@ -2,7 +2,12 @@
     color: rgb(11, 32, 65);
 }
 
-.App--dark-mode{
+.App--dark-mode, 
+.App--dark-mode .MuiPaper-root{
     background-color: #212121;
+    color: white;
+}
+
+.App--dark-mode .MuiSvgIcon-root{
     color: white;
 }

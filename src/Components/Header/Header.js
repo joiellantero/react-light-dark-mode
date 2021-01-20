@@ -14,6 +14,8 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import HomeIcon from '@material-ui/icons/Home';
 import GradeIcon from '@material-ui/icons/Grade';
 import HelpIcon from '@material-ui/icons/Help';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+import Brightness7Icon from '@material-ui/icons/Brightness7';
 import { AppBar, Toolbar, Typography, IconButton, Checkbox,
          Drawer, ListItem, List, Divider, ListItemText
 } from '@material-ui/core';
@@ -113,6 +115,8 @@ const Header = () => {
                             style={{
                                 color: isDarkModeEnabled ? '#FFFFFF' : '#333333'
                             }}
+                            icon={<Brightness4Icon />}
+                            checkedIcon={<Brightness7Icon />}
                             checked={checked}
                             value={ isDarkModeEnabled }
                             onChange={ handleChange }
@@ -122,17 +126,17 @@ const Header = () => {
                 </AppBar>
                 
                 <Drawer
-                className={classes.drawer}
-                variant="persistent"
-                anchor="left"
-                open={open}
-                classes={{
-                    paper: classes.drawerPaper,
-                }}
+                    className={classes.drawer}
+                    variant="persistent"
+                    anchor="left"
+                    open={open}
+                    classes={{
+                        paper: classes.drawerPaper,
+                    }}
                 >
                     <div className={classes.drawerHeader}>
                         <IconButton onClick={handleDrawerClose}>
-                        {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                         </IconButton>
                     </div>
                     <Divider />
