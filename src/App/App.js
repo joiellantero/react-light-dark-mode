@@ -2,9 +2,9 @@ import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { darkModeState } from '../Shared/globalState';
 import './App.css';
-import Header from '../Header/Header.component';
-import Home from '../Home/Home.component';
-import About from '../About/About.component';
+import Header from '../Components/Header/Header';
+import Home from '../Pages/Home/Home';
+import About from '../Pages/About/About';
 import { Route } from "react-router-dom";
 
 function App() {

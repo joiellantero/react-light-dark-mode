@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Link } from 'react-router-dom'
 
 import { useRecoilState } from 'recoil';
-import { darkModeState } from '../Shared/globalState';
+import { darkModeState } from '../../Shared/globalState';
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
